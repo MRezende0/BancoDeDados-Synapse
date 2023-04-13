@@ -31,3 +31,18 @@ insert into aluno (nome, nasc, email) value ("Ana Maria", "1980-05-20 07:07:07",
 ("João Pedro", "1979-09-12 09:09:09", "joao@sql.com.br");
 
 select * from aluno;
+
+insert into curso (nome_curso) value ("Medicina"), ("Arquitetura"), ("Filosofia"), ("Informática"), ("Jornalismo");
+
+select * from curso;
+
+insert into matricula (id_aluno, id_curso) value (1, 3), (2, 1), (3, 5);
+insert into matricula (id_aluno, id_curso) value (3, 2);
+
+select * from matricula;
+
+select * from matricula where id_aluno = 3;
+
+select * from aluno order by nome asc;
+
+select nome from aluno order by nome desc;
